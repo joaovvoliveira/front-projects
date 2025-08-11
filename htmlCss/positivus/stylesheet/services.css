@@ -1,0 +1,56 @@
+.services {
+  .servicesTitle {
+    margin-bottom: 85px;
+    display: flex;
+    gap: 40px;
+
+    h2 {
+      font: var(--h2);
+      background-color: var(--green);
+      color: var(--black);
+      border-radius: 8px;
+      padding: 4px 6px;
+    }
+    p {
+      font: var(--paragraph);
+    }
+  }
+  .servicesList {
+    gap: 40px;
+    
+    .serviceItem:first-child {
+      background-color: var(--grey);
+    }
+    .servicesItem {
+      padding: 50px;
+      max-width: 600px;
+      justify-content: space-between;
+      gap: 80px;
+
+      .servicesDesc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-height: 100%;
+        
+        h3 {
+          font: var(--h3);
+          background-color: var(--green);
+          color: var(--black);
+          max-width: fit-content;
+        }
+        
+        a {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          font: var(--paragraph-2);
+          img {
+            width: 42px;
+            height: 42px;
+          }
+        }
+      }
+    }
+  }
+}

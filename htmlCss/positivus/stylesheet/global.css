@@ -47,6 +47,19 @@ a {
   border-radius: 1rem;
 }
 
+.h3-green {
+  font: var(--h3);
+  background-color: var(--green);
+  color: var(--black);
+}
+
+.h3-white {
+  font: var(--h3);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+
 .btn-transp {
   font: var(--h4);
   border: 1px solid var(--black);

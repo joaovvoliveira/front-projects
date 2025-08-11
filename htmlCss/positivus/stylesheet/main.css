@@ -1,0 +1,30 @@
+#main {
+  align-items: center;
+  margin-bottom: 70px;
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/6;
+    gap: 36px;
+
+    h1 {
+      font: var(--h1);
+    }
+    p {
+      font: var(--paragraph);
+    }
+    a {
+      max-width: fit-content;
+    }
+  }
+  .mainImg {
+    grid-column: 7/13;
+  }
+}
+
+#partners {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}

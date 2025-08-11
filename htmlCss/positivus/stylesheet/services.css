@@ -2,6 +2,7 @@
   .servicesTitle {
     margin-bottom: 85px;
     display: flex;
+    align-items: center;
     gap: 40px;
 
     h2 {
@@ -17,38 +18,87 @@
   }
   .servicesList {
     gap: 40px;
-    
-    .serviceItem:first-child {
+
+    .servicesItem:nth-child(1),
+    .servicesItem:nth-child(4) {
       background-color: var(--grey);
+      .servicesDesc {
+        h3 {
+          background-color: var(--green);
+        }
+
+      }
     }
+    .servicesItem:nth-child(2),
+    .servicesItem:nth-child(5) {
+      background-color: var(--green);
+      .servicesDesc {
+        h3 {
+          background-color: var(--white);
+        }
+
+      }
+    }
+    .servicesItem:nth-child(3),
+    .servicesItem:nth-child(6) {
+      background-color: var(--black);
+      .servicesDesc {
+        h3 {
+          background-color: var(--white);
+        }
+        a {
+          color: var(--white);
+        }
+
+      }
+    }
+
     .servicesItem {
+      border-radius: 2rem;
       padding: 50px;
       max-width: 600px;
       justify-content: space-between;
-      gap: 80px;
+      gap: 4rem;
+      border: 1px solid black;
+      box-shadow: 2px 5px black;
 
       .servicesDesc {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        max-height: 100%;
-        
+        gap: 5.75rem;
+
         h3 {
           font: var(--h3);
           background-color: var(--green);
+          align-self: flex-start; /* <- impede que este h3 em específico seja esticado */
           color: var(--black);
-          max-width: fit-content;
+          padding: 4px 8px;
         }
-        
+
         a {
           display: flex;
           align-items: center;
+          grid-column: 1;
           gap: 24px;
           font: var(--paragraph-2);
           img {
             width: 42px;
             height: 42px;
           }
+        }
+      }
+      div.servicesItemImg {
+        display: flex;
+        align-items: center;
+        img {
+          width: 100%;           /* ocupa todo o espaço horizontal do container */
+          height: auto;          /* mantém proporção */
+          max-width: 210px;      /* impede de passar do tamanho máximo */
+          object-fit: contain;   /* garante que a imagem inteira apareça */
+          object-position: center;
+          image-rendering: -webkit-optimize-contrast; /* Safari/Chrome */
+          image-rendering: crisp-edges; /* Firefox */
         }
       }
     }

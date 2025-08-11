@@ -47,6 +47,14 @@ a {
   border-radius: 1rem;
 }
 
+.h2-green {
+    font: var(--h2);
+    background-color: var(--green);
+    color: var(--black);
+    border-radius: 8px;
+    padding: 4px 6px;
+}
+
 .h3-green {
   font: var(--h3);
   background-color: var(--green);
@@ -72,4 +80,17 @@ a {
   color: var(--black);
   padding: 20px 36px;
   border-radius: 1rem;
+}
+
+.openedWorkProcessItem {
+  background-color: var(--green);
+}
+
+.openedWorkProcessParagraph {
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.displayNone {
+  display: none;
 }

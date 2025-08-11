@@ -5,16 +5,9 @@
     display: flex;
     align-items: center;
     gap: 40px;
-
-    h2 {
-      font: var(--h2);
-      background-color: var(--green);
-      color: var(--black);
-      border-radius: 8px;
-      padding: 4px 6px;
-    }
     p {
       font: var(--paragraph);
+      max-width: 50ch;
     }
   }
   .servicesList {

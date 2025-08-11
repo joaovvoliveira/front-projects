@@ -1,0 +1,58 @@
+.workingProcess {
+  .workingProcessTitle {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    p {
+      font: var(--paragraph);
+    }
+  }
+  .stepsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .stepsItem {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 60px;
+      background-color: var(--grey);
+      box-shadow: 2px 6px black;
+      border-radius: 2rem;
+
+      .stepsSpan {
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        gap: 1.5rem;
+        align-items: center;
+        span:first-child {
+          font: var(--h1);
+        }
+        span:nth-child(2) {
+          font: var(--h3);
+        }
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: auto;
+          background-color: var(--white);
+          color: var(--black);
+          font: var(--h1);
+          width: 60px;
+          height: 60px;
+          border-radius: 100%;
+          border: 1px solid var(--black);
+        }
+      }
+      p {
+        font: var(--paragraph);
+        border-top: 1px solid black;
+        
+      }
+    }
+  }
+}
+

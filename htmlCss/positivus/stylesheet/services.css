@@ -1,10 +1,6 @@
 .services {
   margin-bottom: 100px;
-  .servicesTitle {
-    margin-bottom: 85px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
+  .sectionTitle {
     p {
       font: var(--paragraph);
       max-width: 50ch;

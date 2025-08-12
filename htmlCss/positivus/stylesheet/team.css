@@ -1,0 +1,43 @@
+.team {
+  .teamContent {
+    gap: 40px;
+    .teamItem {
+      flex-direction: column;
+      padding: 40px 35px;
+      border-radius: 2rem;
+      border: 1px solid var(--black);
+      box-shadow: 2px 5px 0 var(--black);
+      .teamPerson {
+        justify-content: space-between;
+        padding-bottom: 28px;
+        /* align-items: center; */
+        margin-bottom: 28px;
+        border-bottom: 1px solid var(--black);
+        align-items: center;
+        .personTitle {
+          align-self: end;
+          h4 {
+            font: var(--h4);
+          }
+          span {
+            font: var(--paragraph);
+            display: inline-block;
+            align-self: flex-start;
+          }
+
+        }
+        img:first-child {
+          width: 100%;
+          height: auto;
+          max-width: 100px;
+        }
+        a {
+          align-self: start;
+        }
+      }
+      p {
+        font: var(--paragraph);
+      }
+    }
+  }
+}

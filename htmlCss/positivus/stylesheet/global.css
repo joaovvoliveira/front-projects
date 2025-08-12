@@ -29,6 +29,9 @@ a {
 .col-2 {
   grid-template-columns: 1fr 1fr;
 }
+.col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .col-4 {
   grid-template-columns: repeat(4, 1fr);
 }
@@ -67,6 +70,13 @@ a {
   color: var(--black);
 }
 
+.sectionTitle {
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 
 .btn-transp {
   font: var(--h4);
@@ -91,7 +101,10 @@ a {
 
 .paragraphPadding {
   padding-top: 30px;
-  margin-top: 30px;
+  margin-top: 30px; 
+  /* transform: scaleY(0); */
+  /* transform-origin: top;
+  transition: transform 0.2s ease-in-out; */
 }
 
 .displayNone {

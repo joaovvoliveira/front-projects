@@ -37,3 +37,20 @@
     }
   }
 }
+
+@media (max-width:800px) {
+  .proposal {
+    margin-bottom: 80px;
+
+    .proposalWhiteBg {
+      flex-direction: column;
+      box-shadow: none;
+      padding-block: 2rem;
+      gap: 1rem;
+      .proposalContent {
+        text-align: center;
+        align-items: center;
+      }
+    }
+  }
+}

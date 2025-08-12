@@ -41,3 +41,26 @@
     }
   }
 }
+@media (max-width: 900px) {
+  .studiesCases {
+    margin-bottom: 80px;
+    .studiesCaseContent {
+      gap: 2rem;
+      flex-direction: column;
+      .studiesCaseItem {
+        gap: 1rem;
+      }
+      .studiesCaseItem:nth-child(2) {
+        border-inline: none;
+        padding-inline: 0px;
+        padding-block: 1rem;
+        border-block: 1px solid var(--white);
+      }
+      .studiesCaseItem:last-child {
+        padding-inline: 0px;
+
+      }
+    }
+  }
+
+}

@@ -6,11 +6,13 @@
       flex-direction: column;
       padding: 40px 35px;
       border-radius: 2rem;
+      gap: 1rem;
       border: 1px solid var(--black);
       box-shadow: 2px 5px 0 var(--black);
       .teamPerson {
         justify-content: space-between;
         padding-bottom: 28px;
+        gap: 1rem;
         /* align-items: center; */
         margin-bottom: 28px;
         border-bottom: 1px solid var(--black);
@@ -25,7 +27,6 @@
             display: inline-block;
             align-self: flex-start;
           }
-
         }
         img:first-child {
           width: 100%;
@@ -34,11 +35,53 @@
         }
         a {
           align-self: start;
+          img {
+            width: 100%;
+            /* display: block; */
+            min-width: 40px;
+          }
         }
       }
       p {
         font: var(--paragraph);
       }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  #team {
+    .teamContent {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .teamItem {
+        .teamPerson {
+          .personTitle,
+          a {
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  #team {
+    .teamContent {
+      display: grid;
+      grid-template-columns: 1fr;
+      .teamItem {
+        align-items: center;
+        .teamPerson {
+          justify-content: center;
+          gap: 2rem;
+        }
+      }
+      p {
+        text-align: center;
+        max-width: 30ch;
+      }
+
     }
   }
 }

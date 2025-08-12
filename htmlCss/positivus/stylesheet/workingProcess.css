@@ -1,6 +1,6 @@
 .workingProcess {
   margin-bottom: 120px;
-  .servicesTitle {
+  .sectionTitle {
     p {
       font: var(--paragraph);
     }
@@ -48,9 +48,36 @@
       p {
         font: var(--paragraph);
         border-top: 1px solid black;
-        
       }
     }
   }
 }
 
+@media (max-width: 600px) {
+  #workingProcess {
+    margin-bottom: 80px;
+    .stepsContent {
+      .stepsItem {
+        .stepsSpan {
+          grid-template-columns: 1fr 1fr;
+          span:first-child {
+            font: var(--h1-mob);
+            grid-column: 1;
+          }
+          span:nth-child(2) {
+            font: var(--h3-mob);
+            grid-column: 1;
+          }
+          a {
+            grid-row: 1/2;
+            grid-column: 2;
+          }
+        }
+        p {
+          font: var(--paragraph-mob);
+          /* background-color: aquamarine; */
+        }
+      }
+    }
+  }
+}

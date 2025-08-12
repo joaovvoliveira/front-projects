@@ -82,11 +82,14 @@ a {
   border-radius: 1rem;
 }
 
-.openedWorkProcessItem {
+.openedWorkProcessItemGreen {
   background-color: var(--green);
 }
+.openedWorkProcessItemGrey {
+  background-color: var(--grey);
+}
 
-.openedWorkProcessParagraph {
+.paragraphPadding {
   padding-top: 30px;
   margin-top: 30px;
 }

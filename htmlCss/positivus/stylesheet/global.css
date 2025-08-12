@@ -51,11 +51,11 @@ a {
 }
 
 .h2-green {
-    font: var(--h2);
-    background-color: var(--green);
-    color: var(--black);
-    border-radius: 8px;
-    padding: 4px 6px;
+  font: var(--h2);
+  background-color: var(--green);
+  color: var(--black);
+  border-radius: 8px;
+  padding: 4px 6px;
 }
 
 .h3-green {
@@ -76,7 +76,6 @@ a {
   align-items: center;
   gap: 40px;
 }
-
 
 .btn-transp {
   font: var(--h4);
@@ -101,7 +100,7 @@ a {
 
 .paragraphPadding {
   padding-top: 30px;
-  margin-top: 30px; 
+  margin-top: 30px;
   /* transform: scaleY(0); */
   /* transform-origin: top;
   transition: transform 0.2s ease-in-out; */
@@ -109,4 +108,23 @@ a {
 
 .displayNone {
   display: none;
+}
+.navLi {
+  position: relative;
+  font: var(--paragraph-2);
+}
+
+.navLi::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--green);
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease-in-out;
+}
+.navLi:hover::after {
+  transform: scaleX(1);
 }

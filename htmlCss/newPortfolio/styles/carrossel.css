@@ -1,0 +1,25 @@
+.carrossel {
+  background-color: var(--color-dark-06);
+  border-top: 1px solid var(--color-dark-12);
+  border-bottom: 1px solid var(--color-dark-12);
+  padding: 20px 0;
+  margin-bottom: 160px;
+  ul {
+    color: var(--color-purple-80);
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    li {
+      img {
+        max-width: 2rem;
+      }
+    }
+  }
+}
+
+.flex-carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}

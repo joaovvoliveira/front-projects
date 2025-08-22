@@ -1,0 +1,59 @@
+/* Importando Manrope com todos os pesos que você pediu */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+
+:root {
+  /* === Purple Shades === */
+  --color-purple-55: #4a2ced;
+  --color-purple-60: #5e43ef;
+  --color-purple-70: #8672f3;
+  --color-purple-80: #aea1f7;
+
+  /* === Primary Colors (Brand Identity) === */
+  --color-primary-90: #d6d0fb;
+  --color-primary-95: #eae7fd;
+  --color-primary-97: #f3f1fe;
+  --color-primary-99: #fbfaff;
+
+  /* === Dark Shades === */
+  --color-dark-03: #070708;
+  --color-dark-06: #0e0e10;
+  --color-dark-08: #131316;
+  --color-dark-12: #1c1c21;
+
+  --color-dark-15: #232329;
+  --color-dark-20: #2f2f37;
+  --color-dark-25: #3b3b45;
+  --color-dark-30: #474752;
+
+  /* === Grey Shades === */
+  --color-grey-40: #62646c;
+  --color-grey-50: #797c86;
+  --color-grey-70: #afb0b6;
+  --color-grey-80: #cacace;
+
+  --color-grey-90: #e4e4e6;
+  --color-grey-95: #f2f2f3;
+  --color-grey-97: #f7f7f8;
+  --color-grey-99: #fcfcfd;
+
+  --white: #FFFFFF;
+
+  /* === Font Families === */
+  --font-family-base: "Manrope", sans-serif;
+
+  /* === Font Weights === */
+  --h1: 600 5rem / normal var(--font-family-base), sans-serif;
+  --h2: 600 3.625rem / normal var(--font-family-base), sans-serif;
+  /* --h3: 600 2.75rem / normal var(--font-family-base), sans-serif; */
+  --h3: 500 1.875rem / normal var(--font-family-base), sans-serif;
+  
+  --paragraph-18px: 400 1.125rem / 150% var(--font-family-base), sans-serif;
+  --paragraph-18px-md: 500 1.125rem / 150% var(--font-family-base), sans-serif;
+  --paragraph-20px: 400 1.25rem / 150% var(--font-family-base), sans-serif;
+  --paragraph-20px-smb: 600 1.25rem var(--font-family-base), sans-serif;
+  --paragraph-22px: 500 1.375rem / normal var(--font-family-base), sans-serif;
+  /* 
+ 
+
+  */
+}

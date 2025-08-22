@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="#4F46E5" stroke-width="20">
+    <!-- Triângulo apontando para cima -->
+    <polygon points="256,256 80,440 432,440"/>
+    <polygon points="256,256 110,400 402,400"/>
+    <polygon points="256,256 140,360 372,360"/>
+
+    <!-- Triângulo apontando para baixo -->
+    <polygon points="256,256 80,72 432,72"/>
+    <polygon points="256,256 110,112 402,112"/>
+    <polygon points="256,256 140,152 372,152"/>
+  </g>
+</svg>

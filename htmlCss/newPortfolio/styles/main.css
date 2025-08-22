@@ -1,0 +1,32 @@
+#main {
+  .mainContent {
+    align-items: center;
+    justify-content: space-between;
+    .mainText {
+      span {
+        font: var(--paragraph-22px);
+        color: var(--color-grey-40);
+      }
+      h1 {
+        font: var(--h1);
+        color: var(--color-grey-90);
+        max-width: 7ch;
+      }
+    }
+    .haveChat {
+      text-transform: uppercase;
+      color: var(--white);
+      font: var(--h2);
+      align-items: start;
+      .firstLine {
+        align-items: center;
+        gap: 2rem;
+        .btn-purple {
+          width: 130px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

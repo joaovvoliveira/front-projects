@@ -1,10 +1,11 @@
-#about {
+/* #about,
+#services {
   margin-bottom: 200px;
-  .aboutHeader {
+  .sectionHeader {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 80px;
-    .aboutName {
+    .serviceTitle {
       text-align: start;
       span {
         font: var(--paragraph-20px-smb);
@@ -25,89 +26,105 @@
 
   .aboutContent {
     color: var(--white);
+    grid-template-rows: 1fr 1fr;
     .divImg {
-      img {
-        width: 100%; /* ocupa toda a largura do container */
-        max-height: 700px; /* ocupa toda a altura do container */
-        object-fit: cover; /* mantém proporção e preenche o container, cortando o que sobra */
-        object-position: center; /* centraliza a imagem no corte */
-      }
       grid-column: 1/7;
+      grid-row: 1/3;
+      min-width: 400px;
+      img { */
+        /* max-width: 100%; /* ocupa toda a largura do container */
+        /* max-height: 100%; */
+        /* max-height: 700px; ocupa toda a altura do container */
+        /* object-fit: cover; mantém proporção e preenche o container, cortando o que sobra */
+        /* object-position: center; centraliza a imagem no corte */ */
+      /* }
     }
   }
-  .aboutInfo {
+  .intro {
     grid-column: 7/13;
-
-    .intro {
+    gap: 2rem;
+    padding-inline: 40px;
+    h3 {
       display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      padding: 40px;
-      h3 {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        font: var(--h3);
-      }
-      p {
-        font: var(--paragraph-18px-md);
-        color: var(--color-grey-70);
+      align-items: center;
+      gap: 20px;
+      font: var(--h3);
+    }
+    p {
+      font: var(--paragraph-18px-md);
+      color: var(--color-grey-70);
+    }
+  }
+  .contactInfo {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-inline: 40px;
+    h3 {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font: var(--h3);
+    }
+    .contactData {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      div {
+        span:first-child {
+          font: var(--paragraph-18px-md);
+          color: var(--color-grey-90);
+        }
+        span:last-child {
+          font: var(--paragraph-20px);
+          color: var(--color-grey-70);
+        }
       }
     }
-    .contactInfo {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      padding: 40px;
-      h3 {
-        display: flex;
+    .socialMediaCV {
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      min-width: fit-content;
+      .socialMedia {
+        gap: 1rem;
         align-items: center;
-        gap: 20px;
-        font: var(--h3);
-      }
-      .contactData {
-        display: flex;
-        justify-content: space-between;
-        div {
-          span:first-child {
-            font: var(--paragraph-18px-md);
-            color: var(--color-grey-90);
-          }
-          span:last-child {
-            font: var(--paragraph-20px);
-            color: var(--color-grey-70);
-          }
-        }
-      }
-      .socialMediaCV {
-        justify-content: space-between;
-        align-items: center;
-        .socialMedia {
-          gap: 1rem;
-          align-items: center;
-          padding: 16px;
-          border: 1px solid var(--color-dark-12);
-          background-color: var(--color-dark-03);
-          border-radius: 4rem;
-          a {
-            border-radius: 100%;
-            padding: 14px;
-            background: linear-gradient(
-              90deg,
-              #2f2f37 100% 28%,
-              rgba(47, 47, 55, 0) 100% 100%
-            );
-          }
-        }
+        padding: 16px;
+        border: 1px solid var(--color-dark-12);
+        background-color: var(--color-dark-03);
+        border-radius: 4rem;
         a {
+          min-width: 50px;
+          border-radius: 100%;
+          padding: 14px;
           background: linear-gradient(
             90deg,
             #2f2f37 100% 28%,
             rgba(47, 47, 55, 0) 100% 100%
           );
-          color: var(--white);
         }
+      }
+      a {
+        background: linear-gradient(
+          90deg,
+          #2f2f37 100% 28%,
+          rgba(47, 47, 55, 0) 100% 100%
+        );
+
+        color: var(--white);
       }
     }
   }
 }
+
+/* @media (max-width: 1000px) {
+  .aboutContent {
+    .contactInfo {
+      .contactData {
+      }
+      .socialMediaCV {
+      }
+    }
+  }
+} */

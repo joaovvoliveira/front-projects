@@ -5,24 +5,25 @@ header {
     margin-inline: auto;
     padding-inline: 32px;
     padding-block: 24px;
+}
 
-    & ul {
-        list-style: none;
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-        font: var(--font-md);
-        color: var(--text-color-secondary);
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font: var(--font-md);
+    color: var(--text-color-secondary);
+    
+}
 
-        & li:hover {
-            color: var(--brand-color);
-            transition: 0.3s;
-            cursor: pointer;
-        }
+header ul li:hover {
+    color: var(--brand-color);
+    transition: 0.3s;
+    cursor: pointer;
+}
 
-        & li:nth-child(4) img {
-            width: 40px;
-            height: 40px;
-        }
-    }
+header ul li:nth-child(4) img {
+    width: 40px;
+    height: 40px;
 }

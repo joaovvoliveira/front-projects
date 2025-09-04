@@ -1,5 +1,9 @@
 #main {
   .mainContent {
+    padding-block: 1rem;
+    background-image: url("../assets/VectorMain.svg");
+    background-position: center;
+    background-repeat: no-repeat;
     align-items: center;
     justify-content: space-between;
     .mainText {
@@ -19,12 +23,113 @@
       font: var(--h2);
       align-items: start;
       .firstLine {
+        /* align-items: center; */
+        gap: 1rem;
+        max-height: 50px;
         align-items: center;
-        gap: 2rem;
         .btn-purple {
-          width: 130px;
-          display: flex;
           align-items: center;
+          justify-content: center;
+          img {
+            width: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  #main {
+    .mainContent {
+      justify-content: space-around;
+      .mainText {
+        span {
+        }
+        h1 {
+          font-size: 4rem;
+        }
+      }
+      .haveChat {
+        .firstLine {
+          .btn-purple {
+            max-width: fit-content;
+            img {
+              /* width: 2rem; */
+            }
+          }
+        }
+        span {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  #main {
+    .mainContent {
+      padding-block: 2rem;
+      /* gap: 2rem; */
+      justify-content: space-around;
+      .mainText {
+        span {
+          font: var(--paragraph-18px);
+        }
+        h1 {
+          font-size: 3rem;
+        }
+      }
+      .haveChat {
+        .firstLine {
+          .btn-purple {
+            max-height: 40px;
+            max-width: 120px;
+            img {
+              width: 0.75rem;
+            }
+          }
+        }
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #main {
+    .mainContent {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      gap: 2rem;
+      .mainText {
+        span {
+        }
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      .haveChat {
+        align-items: start;
+        .firstLine {
+          justify-content: center;
+          align-items: center;
+          .btn-purple {
+            max-height: 40px;
+            min-width: 120px;
+            img {
+              width: 0.75rem;
+            }
+          }
+
+        }
+        > span {
+          /* font-size: 1.5rem; */
+          /* text-align: center; */
         }
       }
     }

@@ -7,7 +7,9 @@
 body {
   background-color: var(--color-dark-03);
 }
-
+h3 {
+  color: var(--color-grey-90);
+}
 .container {
   max-width: 1480px;
   margin: 0 auto;
@@ -25,6 +27,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .flex {
   display: flex;
 }
@@ -64,4 +67,41 @@ a {
   align-items: center;
   justify-content: center;
 
+}
+
+.sectionHeader {
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 80px;
+  .serviceTitle {
+    text-align: start;
+    span {
+      font: var(--paragraph-20px-smb);
+      color: var(--color-grey-50);
+    }
+    h2 {
+      font: var(--h2);
+      color: var(--white);
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .sectionHeader {
+    margin-block: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sectionHeader {
+    margin-block: 50px;
+    .serviceTitle {
+      span {
+        font: var(--paragraph-18);
+      }
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
 }

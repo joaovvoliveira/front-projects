@@ -1,0 +1,96 @@
+#jobs {
+  /* color: aliceblue; */
+  .jobsList {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    .jobsItem {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      border: 1px solid var(--color-grey-50);
+      padding: 1.25rem;
+      border-radius: 1.5rem;
+      span {
+        padding: 0;
+        margin: 0;
+      }
+      h3 {
+        font: var(--h3);
+      }
+      span {
+        font: var(--paragraph-20px);
+      }
+      span,
+      h3 {
+        color: var(--color-grey-70);
+        strong {
+          color: var(--color-grey-90);
+        }
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        li {
+          font: var(--paragraph-18);
+          font-weight: 400;
+          max-width: fit-content;
+          position: relative;
+          padding-left: 1.5rem;
+          color: var(--color-grey-70);
+          /* max-width: 40ch; */
+        }
+        li::after {
+          content: "";
+          position: absolute;
+          background: url("../assets/purpleStar.svg") no-repeat;
+          background-size: contain;
+          /* background-color: blueviolet; */
+          width: 20px;
+          height: 20px;
+          top: 2px;
+          left: -2px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #jobs {
+    .jobsList {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #jobs {
+    .jobsList {
+      grid-template-columns: 1fr;
+      .jobsItem {
+        gap: 0.5rem;
+        border: 1px solid var(--color-grey-50);
+        padding: 1rem;
+        border-radius: 1.5rem;
+        h3 {
+          font: var(--paragraph-22px);
+        }
+        span {
+          font: var(--paragraph-18px);
+        }
+        span,
+        h3 {
+          color: var(--color-grey-70);
+          strong {
+            color: var(--color-grey-90);
+          }
+        }
+        ul {
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+}

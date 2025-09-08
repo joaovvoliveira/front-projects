@@ -17,25 +17,6 @@
         max-width: 7ch;
       }
     }
-    .haveChat {
-      text-transform: uppercase;
-      color: var(--white);
-      font: var(--h2);
-      align-items: start;
-      .firstLine {
-        /* align-items: center; */
-        gap: 1rem;
-        max-height: 50px;
-        align-items: center;
-        .btn-purple {
-          align-items: center;
-          justify-content: center;
-          img {
-            width: 1rem;
-          }
-        }
-      }
-    }
   }
 }
 

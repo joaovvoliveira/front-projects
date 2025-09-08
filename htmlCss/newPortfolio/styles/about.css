@@ -59,39 +59,6 @@
           }
         }
       }
-      .socialMediaCV {
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-        min-width: fit-content;
-        .socialMedia {
-          gap: 1rem;
-          align-items: center;
-          padding: 16px;
-          border: 1px solid var(--color-dark-12);
-          background-color: var(--color-dark-03);
-          border-radius: 4rem;
-          a {
-            min-width: 50px;
-            border-radius: 100%;
-            padding: 14px;
-            background: linear-gradient(
-              90deg,
-              #2f2f37 100% 28%,
-              rgba(47, 47, 55, 0) 100% 100%
-            );
-          }
-        }
-        a {
-          background: linear-gradient(
-            90deg,
-            #2f2f37 100% 28%,
-            rgba(47, 47, 55, 0) 100% 100%
-          );
-  
-          color: var(--white);
-        }
-      }
     }
   }
 }

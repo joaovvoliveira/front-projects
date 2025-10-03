@@ -83,10 +83,11 @@
 @media (max-width: 500px) {
   #main {
     .mainContent {
+      /* padding-block: 2rem; */
       flex-direction: column;
       text-align: center;
       justify-content: center;
-      gap: 2rem;
+      gap: 3rem;
       .mainText {
         span {
         }

@@ -37,11 +37,11 @@
 
 @media (max-width: 700px) {
   .carrossel {
-    padding: 10px;
+    padding-block: 30px;
     ul {
-      gap: 1rem;
+      gap: 1.25rem;
       li {
-        font-size: .75rem;
+        font-size: .85rem;
         img {
           max-width: 1.5rem;
         }

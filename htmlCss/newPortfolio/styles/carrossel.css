@@ -39,7 +39,7 @@
   .carrossel {
     padding-block: 30px;
     ul {
-      gap: 1.25rem;
+      gap: 1rem;
       li {
         font-size: .85rem;
         img {
